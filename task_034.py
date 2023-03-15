@@ -11,7 +11,6 @@
 def is_rhyme(phrase):
     list_v =[]
     List_phrase = phrase.split()
-    flag = True
     for i in List_phrase:
         s = 0
         k = [s+1 for letter in i if letter in "уеыаоэяию"]
@@ -19,6 +18,7 @@ def is_rhyme(phrase):
     return list_v
 
 def validate(list_v):
+    flag = True
     for A in range(len(list_v)):
         max_v = list_v[0] 
         if list_v[A] != max_v: 
